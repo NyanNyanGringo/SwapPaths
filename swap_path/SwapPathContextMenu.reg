@@ -1,0 +1,9 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\SwapPaths]
+@="Swap Paths"
+"Icon"="explorer.exe"
+"NoWorkingDirectory"=""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\SwapPaths\command]
+@="powershell.exe -NoLogo -WindowStyle Hidden -NoProfile -ExecutionPolicy Bypass -File \"C:\\path\\to\\SwapPath.ps1\" \"%V\""
