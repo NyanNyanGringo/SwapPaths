@@ -10,10 +10,10 @@ The script automatically opens the new path in a new Explorer window.
 
 2. In `SwapPath.ps1`, change the paths you want to swap:
     ```powershell
-    $Path1 = 'Z:\'
-    $Path2 = 'R:\'
+    $Path1 = 'Z:\some_path'
+    $Path2 = 'R:\some_path'
     ```
 
-3. In `SwapPathContextMenu.reg`, replace `C:\\path\\to\\SwapPath.ps1` with the actual path to your `SwapPath.ps1` file.
+3. In `SwapPathContextMenu.reg`, replace `C:\\path\\to\\SwapPath.ps1` with the actual path to your `SwapPath.ps1` file. Warning: instead of **\\** use **\\\\**.
 
 4. Double-click `SwapPathContextMenu.reg` to add the context menu entry to Windows Explorer.

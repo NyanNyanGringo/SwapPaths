@@ -3,8 +3,8 @@ Param(
 )
 
 # ќпредел€ем пути, которые требуетс€ замен€ть
-$Path1 = 'Z:\'
-$Path2 = 'R:\'
+$Path1 = 'Z:\some_path'
+$Path2 = 'R:\some_path'
 
 # ”дал€ем завершающий обратный слеш, если он есть
 if ($CurrentPath.EndsWith('\')) {
