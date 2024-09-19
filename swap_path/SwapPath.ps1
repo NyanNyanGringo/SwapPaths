@@ -6,6 +6,10 @@ Param(
 $Path1 = 'Z:\some_path'
 $Path2 = 'R:\some_path'
 
+$CurrentPath = $CurrentPath.TrimEnd('"')
+
+Write-Host "Текущий путь '$CurrentPath'."
+
 # Удаляем завершающий обратный слеш, если он есть
 if ($CurrentPath.EndsWith('\')) {
     $CurrentPath = $CurrentPath.TrimEnd('\')

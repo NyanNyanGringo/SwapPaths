@@ -1,14 +1,16 @@
 # SwapPaths Context Menu for Windows Explorer
 
 This repository contains a script that adds a context menu item in Windows Explorer to swap
-directory paths. For example, between `Z:\` and `R:\`, or any other customizable paths.
+directory paths. For example, between `Z:\some_path` and `R:\some_path`, or any other customizable paths.
 The script automatically opens the new path in a new Explorer window.
+
+![presentattion.gif](presentation.gif)
 
 ## Setup Instructions
 
 1. Save the `swap_path` folder (containing `SwapPath.ps1` and `SwapPathContextMenu.reg`) to a directory on your computer.
 
-2. In `SwapPath.ps1`, change the paths you want to swap:
+2. In `SwapPath.ps1`, change the paths you want to swap (do not use \ in the end of the paths):
     ```powershell
     $Path1 = 'Z:\some_path'
     $Path2 = 'R:\some_path'
